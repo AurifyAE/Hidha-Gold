@@ -11,7 +11,7 @@ import {
 } from "../api/api";
 import io from "socket.io-client";
 import { useSpotRate } from "../context/SpotRateContext";
-import mainLogo from "/images/logo.svg";
+import mainLogo from "/images/logo.png";
 import SystemClock from "../components/SystemClock";
 import WorldClockHorizontal from "../components/WorldClock";
 import CommodityTable from "../components/CommodityTable";
@@ -203,12 +203,12 @@ function TvScreen() {
     <Box
       sx={{
         minHeight: "100dvh",
-        color: "#1E293B",
+        color: "white",
         pb: { xs: "0", md: "3vw" },
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#FDFBF7",
+        backgroundColor: "#011612",
       }}
     >
       <Box
@@ -269,7 +269,7 @@ function TvScreen() {
               filter: "drop-shadow(0 4px 14px rgba(70, 45, 10, 0.22))",
             }}
           >
-            <img src={mainLogo} alt="Zelora Gold" className="object-contain w-full" />
+            <img src={mainLogo} alt="Hidha Gold and Diamonds" className="object-contain w-full" />
           </Box>
 
           <CommodityTable items={commodities} />

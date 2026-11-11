@@ -7,10 +7,10 @@ import { useSpotRate } from "../context/SpotRateContext";
 const MarketData = styled(Box)(({ theme }) => ({
   position: "relative",
   overflow: "hidden",
-  backgroundColor: "rgba(255, 255, 255, 0.88)",
+  backgroundColor: "rgba(2, 36, 29, 0.82)",
   backdropFilter: "blur(0.8vw)",
   borderRadius: "1.2vw",
-  boxShadow: "0 0.8vw 2vw rgba(150, 110, 40, 0.15)",
+  boxShadow: "0 0.8vw 2vw rgba(0, 0, 0, 0.5)",
   padding: theme.spacing(2),
   width: "100%",
   "&::before": {
@@ -22,9 +22,8 @@ const MarketData = styled(Box)(({ theme }) => ({
     background: `
             linear-gradient(
                 135deg,
-                rgba(212, 175, 55, 0.6) 0%,
-                rgba(255, 255, 255, 0.8) 50%,
-                rgba(198, 146, 44, 0.45) 100%
+                rgba(229, 197, 131, 0.45) 0%,
+                rgba(200, 155, 60, 0.25) 100%
             )
         `,
     WebkitMask: `

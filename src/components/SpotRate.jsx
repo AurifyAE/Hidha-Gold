@@ -88,20 +88,20 @@ const SpotRate = () => {
     const hasPulse = dir !== "neutral";
 
     // Dynamic styles based on direction
-    let bgColor = "rgba(255, 255, 255, 0.92)";
+    let bgColor = "rgba(0, 18, 14, 0.65)";
     let border = isSilver
-      ? "1px solid rgba(180, 195, 215, 0.55)"
-      : "1px solid rgba(212, 175, 55, 0.45)";
-    let color = "#18140E";
+      ? "1px solid rgba(220, 235, 245, 0.22)"
+      : "1px solid rgba(229, 197, 131, 0.28)";
+    let color = "#FFFFFF";
 
     if (dir === "rise") {
-      bgColor = "#DCFCE7";
-      border = "1px solid #10B981";
-      color = "#065F46";
+      bgColor = "#1E5631";
+      border = "1px solid #3DDC84";
+      color = "#ffffff";
     } else if (dir === "fall") {
-      bgColor = "#FEE2E2";
-      border = "1px solid #EF4444";
-      color = "#991B1B";
+      bgColor = "#7A1C25";
+      border = "1px solid #FF4D4D";
+      color = "#ffffff";
     }
 
     return (
@@ -117,7 +117,7 @@ const SpotRate = () => {
           sx={{
             fontSize: { xs: "14px", md: "1.3vw" },
             fontWeight: 700,
-            color: isSilver ? "#475569" : "#784F14",
+            color: isSilver ? "#BAC8D9" : "#FFEDA5",
             letterSpacing: "0.08em",
             mb: "0.2vw",
           }}
@@ -135,7 +135,7 @@ const SpotRate = () => {
             py: "0.5vw",
             px: "1vw",
             boxShadow:
-              "inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(120, 80, 20, 0.06)",
+              "inset 0 3px 10px rgba(0, 0, 0, 0.6), 0 1px 0 rgba(255, 255, 255, 0.05)",
             transition: "all 0.4s ease",
             ...(hasPulse && {
               animation:
@@ -166,7 +166,7 @@ const SpotRate = () => {
           sx={{
             fontSize: { xs: "12px", md: "1.3vw" },
             fontWeight: 600,
-            color: "#64748B",
+            color: "#D1D5DB",
             mt: "0.4vw",
             letterSpacing: "0.02em",
           }}
@@ -174,7 +174,7 @@ const SpotRate = () => {
           {lowHighLabel}{" "}
           <span
             style={{
-              color: lowHighLabel === "LOW" ? "#059669" : "#DC2626",
+              color: lowHighLabel === "LOW" ? "#3DDC84" : "#FF4D4D",
               fontWeight: 700,
               marginLeft: "0.2vw",
             }}
@@ -191,13 +191,13 @@ const SpotRate = () => {
 
     let title = "GOLD";
     let panelBg =
-      "linear-gradient(145deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 248, 235, 0.80) 100%)";
+      "linear-gradient(145deg, rgba(3, 40, 32, 0.82) 0%, rgba(1, 20, 16, 0.90) 100%)";
     let imageSrc = "/images/gold-bar.png";
 
     if (theme === "silver") {
       title = "SILVER";
       panelBg =
-        "linear-gradient(145deg, rgba(255, 255, 255, 0.88) 0%, rgba(246, 250, 254, 0.80) 100%)";
+        "linear-gradient(145deg, rgba(2, 34, 28, 0.82) 0%, rgba(1, 18, 15, 0.90) 100%)";
       imageSrc = "/images/silver-bar.png";
     }
 
@@ -207,11 +207,11 @@ const SpotRate = () => {
           position: "relative",
           overflow: "hidden",
           borderRadius: "1.8vw",
-          backdropFilter: "blur(18px)",
+          backdropFilter: "blur(14px)",
           background: panelBg,
           boxShadow: isSilver
-            ? "0 1vw 2.5vw rgba(100, 120, 145, 0.14), inset 0 1px 1px #FFFFFF"
-            : "0 1vw 2.5vw rgba(150, 110, 40, 0.15), inset 0 1px 1px #FFFFFF",
+            ? "0 1vw 2.5vw rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(230, 240, 255, 0.25)"
+            : "0 1vw 2.5vw rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 237, 165, 0.25)",
           padding: {
             xs: "4vw 5vw",
             md: "1.1vw 1.8vw",
@@ -230,17 +230,17 @@ const SpotRate = () => {
               ? `
                 linear-gradient(
                   135deg,
-                  rgba(160, 185, 215, 0.6) 0%,
-                  rgba(255, 255, 255, 0.8) 50%,
-                  rgba(140, 165, 195, 0.45) 100%
+                  rgba(255, 255, 255, 0.5) 0%,
+                  rgba(186, 200, 217, 0.2) 50%,
+                  rgba(255, 255, 255, 0.35) 100%
                 )
               `
               : `
                 linear-gradient(
                   135deg,
-                  rgba(212, 175, 55, 0.65) 0%,
-                  rgba(255, 255, 255, 0.8) 50%,
-                  rgba(198, 146, 44, 0.45) 100%
+                  rgba(255, 237, 165, 0.65) 0%,
+                  rgba(212, 175, 55, 0.25) 50%,
+                  rgba(255, 237, 165, 0.45) 100%
                 )
               `,
             WebkitMask: `
@@ -269,7 +269,7 @@ const SpotRate = () => {
               width: { xs: "36px", sm: "48px", md: "4vw" },
               height: { xs: "36px", sm: "48px", md: "4vw" },
               objectFit: "contain",
-              filter: "drop-shadow(0 0.4vw 0.8vw rgba(140, 100, 30, 0.25))",
+              filter: "drop-shadow(0 0.4vw 0.8vw rgba(0,0,0,0.4))",
             }}
             component="img"
             src={imageSrc}
@@ -281,7 +281,7 @@ const SpotRate = () => {
               fontSize: { xs: "16px", md: "2vw" },
               fontWeight: 700,
               letterSpacing: "0.1em",
-              color: isSilver ? "#475569" : "#784F14",
+              color: isSilver ? "#E2E8F0" : "#FFD978",
               lineHeight: "1",
             }}
           >

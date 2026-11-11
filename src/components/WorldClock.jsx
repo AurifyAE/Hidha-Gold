@@ -78,11 +78,11 @@ const WorldClockHorizontal = () => {
             padding: "0.4vw 1.2vw",
             borderRadius: "0.8vw",
             background:
-              "linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 250, 240, 0.78) 100%)",
-            border: "1px solid rgba(212, 175, 55, 0.45)",
+              "linear-gradient(145deg, rgba(2, 38, 30, 0.75) 0%, rgba(1, 20, 16, 0.85) 100%)",
+            border: "1px solid rgba(229, 197, 131, 0.32)",
             boxShadow:
-              "0 0.5vw 1.6vw rgba(140, 100, 30, 0.12), inset 0 1px 1px #FFFFFF",
-            backdropFilter: "blur(16px)",
+              "0 0.5vw 1.5vw rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 237, 165, 0.2)",
+            backdropFilter: "blur(14px)",
           }}
         >
           <Box
@@ -102,7 +102,7 @@ const WorldClockHorizontal = () => {
                 width: "100%",
                 height: "auto",
                 borderRadius: "3px",
-                boxShadow: "0 2px 6px rgba(0, 0, 0, 0.15)",
+                boxShadow: "0 2px 6px rgba(0, 0, 0, 0.35)",
               }}
             />
           </Box>
@@ -121,7 +121,7 @@ const WorldClockHorizontal = () => {
                   lg: "1vw",
                 },
                 fontWeight: 700,
-                color: "#734D12", // Luxury Bronze Gold
+                color: "#FFEDA5", // Luxury Gold
                 letterSpacing: "0.08em",
               }}
             >
@@ -134,9 +134,9 @@ const WorldClockHorizontal = () => {
                   xs: "14px",
                   lg: "1.2vw",
                 },
-                color: "#18140E",
-                fontWeight: 800,
-                letterSpacing: "0.03em",
+                color: "#FFFFFF",
+                fontWeight: 700,
+                letterSpacing: "0.04em",
                 fontVariantNumeric: "tabular-nums",
               }}
             >

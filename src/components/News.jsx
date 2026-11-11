@@ -6,7 +6,7 @@ const NewsTicker = ({ newsItems = [] }) => {
   const items =
     newsItems.length > 0
       ? newsItems
-      : [{ description: "Welcome to Zelora Gold Updates" }];
+      : [{ description: "Welcome to Hidha Gold and Diamonds" }];
 
   return (
     <Box
@@ -20,13 +20,13 @@ const NewsTicker = ({ newsItems = [] }) => {
         display: "flex",
         alignItems: "center",
         overflow: "hidden",
-        backdropFilter: "blur(18px)",
+        backdropFilter: "blur(14px)",
         background:
-          "linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 250, 240, 0.95) 50%, rgba(255, 255, 255, 0.92) 100%)",
+          "linear-gradient(90deg, rgba(1, 20, 16, 0.94) 0%, rgba(2, 36, 28, 0.90) 50%, rgba(1, 20, 16, 0.94) 100%)",
         borderTop: "1.5px solid",
         borderImage:
-          "linear-gradient(to right, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.85) 50%, rgba(212, 175, 55, 0.1) 100%) 1",
-        boxShadow: "0 -4px 20px rgba(140, 100, 30, 0.12)",
+          "linear-gradient(to right, rgba(229, 197, 131, 0.05) 0%, rgba(255, 237, 165, 0.8) 50%, rgba(229, 197, 131, 0.05) 100%) 1",
+        boxShadow: "0 -4px 20px rgba(0, 0, 0, 0.5)",
       }}
     >
       {/* LEFT BRAND SECTION */}
@@ -43,7 +43,7 @@ const NewsTicker = ({ newsItems = [] }) => {
       >
         <Typography
           sx={{
-            color: "#734D12", // Zelora Gold
+            color: "#FFEDA5", // Luxury Gold
             fontSize: {
               xs: "12px",
               md: "1.1vw",
@@ -53,11 +53,11 @@ const NewsTicker = ({ newsItems = [] }) => {
             whiteSpace: "nowrap",
           }}
         >
-          Zelora Gold Updates
+          Hidha Gold Updates
         </Typography>
         <Typography
           sx={{
-            color: "rgba(180, 130, 40, 0.4)",
+            color: "rgba(255, 237, 165, 0.4)",
             fontSize: {
               xs: "14px",
               md: "1.2vw",
@@ -99,12 +99,12 @@ const NewsTicker = ({ newsItems = [] }) => {
               <Typography
                 component="span"
                 sx={{
-                  color: "#1E293B",
+                  color: "#FFFFFF",
                   fontSize: {
                     xs: "12px",
                     md: "1.15vw",
                   },
-                  fontWeight: 600,
+                  fontWeight: 500,
                   whiteSpace: "nowrap",
                   mx: "1.5vw",
                   lineHeight: "1",
@@ -114,7 +114,7 @@ const NewsTicker = ({ newsItems = [] }) => {
               </Typography>
               <span
                 style={{
-                  color: "#B45309",
+                  color: "#FFEDA5",
                   fontSize: "1.3vw",
                   opacity: 0.9,
                   marginRight: "1vw",

@@ -89,11 +89,9 @@ const SystemClock = () => {
             },
             fontWeight: 700,
             letterSpacing: "0.12em",
-            background: "linear-gradient(180deg, #5C3A0A 0%, #382103 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            filter:
-              "drop-shadow(0 1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 2px 8px rgba(90, 50, 10, 0.2))",
+            color: "#FFEDA5",
+            textShadow:
+              "0 2px 14px rgba(255, 237, 165, 0.45), 0 2px 4px rgba(0, 0, 0, 0.8)",
             lineHeight: "1",
           }}
         >
@@ -106,15 +104,15 @@ const SystemClock = () => {
               xs: "11px",
               sm: "0.95vw",
             },
-            color: "#5C3E14",
+            color: "#E2E8F0",
             letterSpacing: "0.2em",
             fontWeight: 700,
-            background: "rgba(255, 255, 255, 0.45)",
-            border: "1px solid rgba(198, 146, 44, 0.35)",
+            background: "rgba(2, 38, 30, 0.75)",
+            border: "1px solid rgba(229, 197, 131, 0.35)",
             borderRadius: "0.4vw",
             px: "0.8vw",
             py: "0.25vw",
-            boxShadow: "0 2px 8px rgba(100, 65, 15, 0.08)",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.4)",
             lineHeight: "1",
           }}
         >
